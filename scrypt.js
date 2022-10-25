@@ -16,14 +16,15 @@ eleClick.addEventListener('click',
 
 const eleRisultatoDadi = document.getElementById('risultato2');
 const eleClickDadi = document.getElementById('bottone2');
-const eleDadoGiocatore = document.getElementById('dado1');
- const eleDadoCompiuter = document.getElementById('dado2');
+
  
 
 eleClickDadi.addEventListener('click', 
     function() {
-        eleDadoGiocatore = Math.floor(Math.random() * 7);
-        eleDadoCompiuter = Math.floor(Math.random() * 7);
+       let eleDadoGiocatore = Math.floor(Math.random() * 7);
+       let eleDadoCompiuter = Math.floor(Math.random() * 7);
+       console.log('numero compiuter' + eleDadoCompiuter)
+       console.log( 'numero player' + eleDadoGiocatore)
 
         if(eleDadoGiocatore > eleDadoCompiuter){
             eleRisultatoDadi.innerHTML = 'HA VINTO IL PLAYER'
