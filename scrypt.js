@@ -7,7 +7,7 @@ const eleClick = document.getElementById("bottone1");
    
 eleClick.addEventListener('click', 
     function() {
-        if(eleEmailList.includes(Mail)){
+        if(eleEmailList.includes(Mail.value)){
             eleRisultato.innerHTML = 'EMAIL CORRETTA'
         }else{
             eleRisultato.innerHTML = 'EMAIL SBAGLIATA RIPROVA'
