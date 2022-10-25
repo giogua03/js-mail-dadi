@@ -25,7 +25,8 @@ eleClickDadi.addEventListener('click',
     function() {
         if(eleDadoGiocatore > eleDadoCompiuter){
             eleRisultatoDadi.innerHTML = 'HA VINTO IL PLAYER'
-        }else{
+        }else if (eleDadoGiocatore < eleDadoCompiuter){
             eleRisultatoDadi.innerHTML = 'HA VINTO IL COMPIUTER'
-        }   
+        }else  
+            eleRisultatoDadi.innerHTML = 'PAREGGIO'
 });
